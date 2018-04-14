@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_rohit_form">
+            <field name="name">rohit</field>
+            <field name="model">rohit</field>
+            <field name="arch" type="xml">
+                <form string="Rohit">
+                   <group>
+                       <field name="name"/>
+                       <field name="fame"/>
+                   </group>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="view_rohit_tree">
+            <field name="name">rohit</field>
+            <field name="model">rohit</field>
+            <field name="arch" type="xml">
+                <tree string="Rohit">
+                    <field name="name"/>
+                    <field name="fame"/>
+                </tree>
+            </field>
+        </record>
+
+    <record model="ir.actions.act_window" id="action_rohit_open">
+      <field name="name">Rohit Models</field>
+      <field name="res_model">rohit</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+        <menuitem
+          id="menu_mohit"
+          name="menu mohit"
+        />
+        <menuitem
+          id="menu_rohit"
+          parent="menu_mohit"
+          action="action_rohit_open"
+        />
+
+
+
+    </data>
+</openerp>
